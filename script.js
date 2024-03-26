@@ -10,6 +10,11 @@ function calculateAge() {
   let days = ageLeft * 365; // multiply it by number of days in a year
   let weeks = ageLeft * 52; // mutiply it by number of weeks in a year
   let months = ageLeft * 12; // mutiply it by number of months in a year
-
-  result.innerHTML = `<div class='alert alert-success'>you have ${days} days, ${weeks} weeks and ${months} left!</div>`; //append the output in result div with the div including class of alert to style it!
+  if (isNaN(input)) {
+    result.innerHTML = `<div class= 'alert alert-danger'>Please Enter a number!</div>`;
+  } else if (input === "") {
+    result.innerHTML = `<div class= 'alert alert-warning'>Please Enter something!</div>`;
+  } else {
+    result.innerHTML = `<div class='alert alert-success'>you have ${days} days, ${weeks} weeks and ${months} left!</div>`; //append the output in result div with the div including class of alert to style it!
+  }
 }
