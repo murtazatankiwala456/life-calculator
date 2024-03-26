@@ -15,6 +15,6 @@ function calculateAge() {
   } else if (input === "") {
     result.innerHTML = `<div class= 'alert alert-warning'>Please Enter something!</div>`;
   } else {
-    result.innerHTML = `<div class='alert alert-success'>you have ${days} days, ${weeks} weeks and ${months} left!</div>`; //append the output in result div with the div including class of alert to style it!
+    result.innerHTML = `<div class='alert alert-success'>you have ${days} days, ${weeks} weeks and ${months} months left!</div>`; //append the output in result div with the div including class of alert to style it!
   }
 }
